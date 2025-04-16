@@ -1,0 +1,9 @@
+drop table bbs01;
+
+create table bbs01(
+	num number primary key,
+	sub varchar2(30),
+	content varchar2(2000),
+	writer varchar2(15),
+	nalja date
+);

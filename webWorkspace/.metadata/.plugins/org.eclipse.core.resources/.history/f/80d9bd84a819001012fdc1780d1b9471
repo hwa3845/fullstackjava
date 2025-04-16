@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>내장 객체</h1>
+<%
+String addr=request.getRemoteAddr();
+out.print("<p>client ip:"+addr+"</p>"); //내 IP 주소
+int port=request.getRemotePort();
+out.print("<p>client port:"+port+"</p>"); //브라우저가 사용하는 동적 포트
+
+String addr2=request.getServerName();
+out.print("<p>server ip:"+addr+"</p>"); //서버측 IP 주소
+int port2=request.getServerPort();
+out.print("<p>server port:"+port+"</p>");	//서버의 포트번호
+
+String method=request.getMethod();
+out.print("method: "+method+"<br>");	//get 방식(주소로), post 방식(header 부분 안에 숨겨서)
+String path=request.getContextPath();
+String uri=request.getRequestURI();
+String url=request.getRequestURL();
+String query=request.getQueryString();
+out.print("path:"+path+"<br>");
+out.print("uri: "+uri+"<br>");
+out.print("url: "+url+"<br>");
+out.print("query: "+query+"<br>");
+%>
+</body>
+</html>

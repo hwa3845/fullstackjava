@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>ex07 page</h1>
+<form action="ex08.jsp" method="post">	
+	id:<input type="text" name="id" ><br/>
+	pw:<input type="text" name="pw" ><br/>
+	<select name="sel" size="2" >
+		<option value="val1">item1</option>
+		<option value="val2">item2</option>
+		<option value="val3">item3</option>
+		<option value="val4">item4</option>
+	</select><br>
+	<input type="checkbox" name="ck1" >item1
+	<input type="checkbox" name="ck2" >item2
+	<input type="checkbox" name="ck3" value="item3">item3<br>
+	<input type="radio" name="ra" >item1
+	<input type="radio" name="ra" >item2
+	<input type="radio" name="ra" >item3<br> <!-- radio는 name이 같아야함 -->
+	<input type="submit">
+</form>
+<br>
+<a href="ex08.jsp?id=abcd&pw=1234">go</a>
+</body>
+</html>

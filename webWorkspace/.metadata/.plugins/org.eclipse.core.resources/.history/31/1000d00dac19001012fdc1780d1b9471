@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>ex08 page</h1>
+<p>method: <%=request.getMethod() %></p>
+<p>id: <%=request.getParameter("id") %></p>	<!-- null 인 경우와 빈칸인 경우 구분 -->
+<p>pw: <%=request.getParameter("pw") %></p>
+<p>sel: <%=request.getParameter("sel") %></p>
+<p>ck1: <%=request.getParameter("ck1") %></p>
+<p>ck2: <%=request.getParameter("ck2") %></p>
+<p>ck3: <%=request.getParameter("ck3") %></p>
+</body>
+</html>
