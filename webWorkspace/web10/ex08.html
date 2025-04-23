@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var k3=3333;
+        var obj1=new Object();
+        //필드
+        obj1['key1']='val1';
+        obj1[false]=3.14;
+        obj1[k3]=true;  //key, value 자료형 관계 없음
+        obj1[null]='val4';
+        obj1[null]='val5';  //같은 키 값이면 덮어씀
+        console.log(obj1['key1']);
+        console.log(obj1[false]);
+        console.log(obj1[k3]);
+        console.log(obj1[null]);
+        console.log(obj1['k5']);    //없는 키값 -> undefined
+        console.log(obj1[3333]);    //k3 -> 3333 -> true
+        console.log(obj1.k3);   //undefined
+        console.log(obj1);
+        var obj2={'k1':'val1', 'k2':'val2'};
+        console.log(obj2);
+        console.log(obj2['k1']);
+        console.log(obj2.k1);
+        obj2.k3='val3';
+        console.log(obj2);
+        var obj3={'key1':'val1','key2':{'k1':'v1','k2':'v2'}};
+        console.log(obj3.key1);
+        console.log(obj3.key2.k1);
+        console.log(obj3.key2.k2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

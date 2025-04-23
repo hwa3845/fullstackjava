@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // func02();    //대입해주기 위해서 익명함수
+        // 대입이 가장 마지막에 일어나기 때문에 대입받기 전인 func02()를 실행하면 오류
+        var func02=function (){
+            console.log('func02 run...');
+            //return a+b;
+        }
+        var obj={'key1':'val1','key2':func02,   //프로퍼티 가지고 있는 것:함수
+                'func3':function(){console.log('출력')}};   //func을 가지고 있는 것:메서드
+        console.log(obj.key1);
+        obj.key2();
+        obj.func3();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

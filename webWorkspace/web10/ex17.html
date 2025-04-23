@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function func01(f){
+            //callback ->매개변수로 함수를 전달 (실행이 아니라 전달)
+            f();
+        }
+        function func02(){
+            console.log('실행');
+        }
+        func01(func02); //func02() X -> func02
+        console.log('---------------------');
+        var arr=[2,6,1,5,8,3];
+        // var func03=function(a,b){
+        //     //callback (sort)
+        //     return a-b;
+        // }
+        // console.log(arr.sort(func03));
+        var sum=0;
+        arr.forEach(function(a,b){ //forEach는 매개변수로 callback을 받게 돼 있음
+            // console.log('실행',a,b);
+            sum+=a;
+        })
+        console.log("sum="+sum);
+        console.log('---------------------');
+        //클로져
+        function func04(){
+            var func05=function(){
+                console.log('지역변수의 함수');
+            }
+            return func05;
+        }
+        var func=func04();
+        func();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

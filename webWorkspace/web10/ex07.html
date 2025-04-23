@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var a=1234;
+        var b=new Number(1234);
+        console.log(a==b);
+        //추가된 연산자-> type까지 같은지 확인하는 연산자(equal 아님)
+        console.log(a===b);
+        var c='hello';
+        var d=new String('hello');
+        console.log(c==d); //true
+        var e=new String('hello');
+        console.log(e==d); //객체끼리 비교하면 다른 객체이기 때문에 false
+        console.log(typeof d); //object -> 객체를 찍어냈기 때문에(new 생성자 호출)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
