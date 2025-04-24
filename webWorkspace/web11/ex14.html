@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+window.onload=function(){
+    var h1=document.querySelector('h1');
+    var btn=document.querySelector('button');
+    h1.onclick=function(e){     //e-> 이벤트 객체
+        console.log('click',e);
+    }
+    // btn.onmouseover=function(){console.log('over');}
+    // btn.onmouseout=function(){console.log('out');}
+    // h1.onmousedown=function(){console.log('down');}
+    // h1.onmouseup=function(){console.log('up');}
+    // h1.ondblclick=function(){console.log('dbclick');}
+
+    //e 객체로 확인할 수 있는 것
+    // 화면기준
+    // screenX:2134
+    // screenY:577
+    // element기준
+    // offsetX:132
+    // offsetY:26
+    // document기준
+    //clientX:110
+    //clientY:338
+
+    btn.onmouseover=function(){console.log('over');}
+    btn.onmouseout=function(){console.log('out');}
+    btn.onmouseenter=function(){console.log('over2');}
+    btn.onmouseleave=function(){console.log('out2');}
+}
+    </script>
+</head>
+<body>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <h1>마우스 이벤트</h1>
+    <button>btn</button>
+</body>
+</html>

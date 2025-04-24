@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var box1,box2,box3;
+        //level 2의 방법으로 설명
+        window.onload=function(){
+            box1=document.querySelector('div');
+            box2=document.querySelector('div>div');
+            box3=document.querySelector('div>div>div');
+            //e.stopPropagation(); -> 이벤트 버블링 제약
+            // box1.onclick=function(e){e.stopPropagation(); console.log('box1');};
+            // box2.onclick=function(e){e.stopPropagation(); console.log('box2');};
+            // box3.onclick=function(e){console.log('box3');};
+
+        //level 3의 방법
+            box1.addEventListener('click',function(e){
+                console.log('box1');
+            });
+            box2.addEventListener('click',function(e){
+                console.log('box2');
+            });
+            box3.addEventListener('click',function(e){
+                e.stopPropagation();
+                console.log('box3');
+            },true);    //true->캡처링
+            
+            box1.style.backgroundColor='rgb(255,0,0)';
+            box2.style.backgroundColor='rgb(0,255,0)';
+            box3.style.backgroundColor='rgb(0,0,255)';
+            box1.style.width='300px';
+            box2.style.width='200px';
+            box3.style.width='100px';
+            box1.style.height='300px';
+            box2.style.height='200px';
+            box3.style.height='100px';
+        };  //이벤트의 기본 속성 -> 버블링
+        function func01(e){
+            console.log(e.target.firstChild.nodeValue); //텍스트값
+        }
+    </script>
+</head>
+<body>
+    <div>box1
+        <div>box2
+            <div>box3</div>
+        </div>
+    </div>
+</body>
+</html>

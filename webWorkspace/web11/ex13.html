@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var btn;
+        window.onload=function(){
+            btn=document.querySelector('button');
+            // btn.addEventListener('click',function(e){
+            //     console.log('click');
+            // });
+            var callback=function(e){
+                alert('click');
+            };
+            btn.addEventListener('click',callback);
+            btn.addEventListener('click',function(e){
+                console.log('click');
+                btn.removeEventListener('click',callback);
+            });
+            console.log('onload1');
+        };
+
+        // window.addEventListener('load',function(){
+        //     console.log('load1');
+        // });
+        // window.addEventListener('load',function(){
+        //     console.log('load2');
+        // }); //eventlistener는 붙이는만큼 모두 수행함
+    </script>
+</head>
+<body>
+    <h1>event dom level 3</h1>
+    <button>btn</button>
+</body>
+</html>

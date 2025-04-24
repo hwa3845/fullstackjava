@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //비동기
+        //v8-단일스레드
+        var callback=function(){
+            // console.log("콜백실행");
+            document.write(new Date());
+            loop=window.setTimeout(callback, 3000);  //반복하도록 callback안에서 또 callback
+        };
+        document.write(new Date());
+        var loop=window.setTimeout(callback, 3000);   //되도록 timeout 으로 반복
+        // var loop=window.setInterval(callback, 3000);  //반복 수행, 부하 높음
+        // 멈추려면 window.clearInterval(loop) (web의 console창에서)
+        
+        console.log("메인실행"); //메인 먼저 실행
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
