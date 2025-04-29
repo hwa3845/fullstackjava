@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(e){
+            // console.log(e);
+            // console.log($(document).height(), $(window).scrollTop(), $(document).scrollTop());
+            // 스크롤 이용해서 페이징 스크롤 포인트 내려가면 append로 다음 페이지 추가
+            if($(document).height()-180<$(window).scrollTop()){
+                $('ul').append('<li>add</li>')
+            }
+        });
+        $(window).resize(function(){
+            console.log($(window).width(),$(window).height());
+        });
+        window.onload=function(){
+            console.log('window load...');
+        };  //마무리되는 상태
+        $(window).unload(function(){ // 사용안함
+            console.log('jq unload...');
+        });
+        $(window).load(function(){  //사용 안 함(통신과 겹쳐서)
+            console.log('jq load...')
+        });
+        $(function(){
+            // $('li').map(function(idx,ele){
+            //     $(ele).css('color','red')
+            //     if(idx%2==0) return ele;
+            // }).css('background-color','blue');
+            console.log('jquery run...',document.querySelector('h1'));
+        }); //화면 랜딩은 하지 않은 상태
+        $(document).ready(function(){
+            console.log('document ready...');
+            // $('button').mouseenter(function(){
+            //     console.log('마우스 up')
+            // });
+            // $('button').mouseleave(function(){
+            //     console.log('마우스 out')
+            // });
+            // $('button').mouseover(function(){
+            //     console.log('마우스 over')
+            // });
+            // $('button').mouseout(function(){
+            //     console.log('마우스 out2')
+            // });
+            $('button')
+                        .click(function(){
+                            console.log('버튼클릭');
+                        })
+                        .mouseup(function(){
+                            console.log('버튼위로');
+                        })
+                        .mousedown(function(){
+                            console.log('버튼아래로');
+                        })
+                        .dblclick(function(){
+                            console.log('더블클릭');
+                        });
+        }); //ready 명시해 주는 것 권장
+    </script>
+</head>
+<body>
+    <h1>jquery</h1>
+    <p><a href="ex01.html">ex01</a></p>
+    <button>btn</button>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+    </ul>
+</body>
+</html>

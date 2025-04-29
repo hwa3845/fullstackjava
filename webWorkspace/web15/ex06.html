@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //click()
+            // $('button').click(function(){
+            //     $('<button>add</button>').click(function(){
+            //         console.log('event');
+            //     }).insertAfter('button');
+            // });
+            //on()
+            // $('button').on('click', function(){
+            //     $('button').after($('<button>add</button>'));
+            // });
+
+            //on 다른 방법 -> event를 붙인 대상이 document
+            //click 이벤트가 버튼에서 발생하면 callback 발생
+            $(document).on('click', 'button', function(){
+                $('h1+button').after($('<button>add</button>'));
+            });
+            //같은 수행, delegate 방법(비권장)
+            // $(document).delegate('button','click',function(){
+            //     $('h1+button').after($('<button>add</button>'));
+            // });
+            // 주의할 점
+            $(document).on('click','a',function(){
+                console.log('취소');
+                return false;
+            });
+
+            //one()
+            // $(document).one('click', 'button', function(){
+            //     $('h1+button').after($('<button>add</button>'));
+            // });
+
+            //시작하자마자 클릭 -> 둘 다 사용 가능
+            // $('button').click();
+            $('button').trigger('click');
+        });
+    </script>
+</head>
+<body>
+    <h1>event bind</h1>
+    <button>btn</button>
+    <a href="ex01.html">link</a>
+</body>
+</html>

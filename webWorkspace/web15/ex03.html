@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //button은 포커스가 가기 때문에 키이벤트 가능하지만
+            //h1,window같은 경우는 포커스가 불가능하기 때문에 키 이벤트 불가능
+            $('input')
+                .keydown(function(e){
+                    console.log('keydown',e.key, e.keyCode, $('input').val());
+                })
+                .keypress(function(e){
+                    console.log('keypress',e.key, e.keyCode, $('input').val());
+                })
+                .keyup(function(e){
+                    //console.log('keyup',e.key, e.keyCode, $('input').val());
+                    //입력한 대로 보이고 싶다면
+                    $('#target').html($('input').val());
+                });
+            $('button').click(function(){
+                $('#target').html($('#target').html()+'<br>'+$('input').val());
+            }); //기존 값 불러오면 누적
+        });
+    </script>
+</head>
+<body>
+    <h1>key event</h1>
+    <input/><button>입력</button>
+    <div id="target"></div>
+</body>
+</html>

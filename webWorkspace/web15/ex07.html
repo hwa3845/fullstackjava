@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            initbig();
+            initsmall();
+            setInterval(func01,2000);
+        });
+        var barr=[];
+        var sarr=[];
+        function initbig(){
+            barr.push('imgs/b1.avif');
+            barr.push('imgs/b2.avif');
+            barr.push('imgs/b3.avif');
+            barr.push('imgs/b4.avif');
+            barr.push('imgs/b5.avif');
+            barr.push('imgs/b6.avif');
+            $('#big').html('<img />').wrap('<ul></ul>');
+        };
+        function initsmall(){
+            sarr.push('imgs/s1.avif');
+            sarr.push('imgs/s2.avif');
+            sarr.push('imgs/s3.avif');
+            sarr.push('imgs/s4.avif');
+            sarr.push('imgs/s5.avif');
+            sarr.push('imgs/s6.avif');
+            $('#small').html('<img />').wrap('<ul></ul>').wrap('<li></li>');
+        };
+        function func01(){
+            $('#big>img').attr('src',barr[1]);
+            barr.push(barr.shift());
+            $('#small>img').attr('src',sarr[0]);
+            sarr.push(sarr.shift());
+        };
+    </script>
+    <style rel="stylesheet" type="text/css">
+        #big{
+            width: 300px;
+            height: 300px;
+        }
+        #big>ul{
+            list-style: none;
+            width: 300px;
+        }
+        #big>img{
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        #small{
+            width: 300px;
+            height: 100px;
+            overflow: hidden;
+        }
+        #small>ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #small>ul>li{
+            width: 300px;
+            float: left;
+        }
+        #small>img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div id="big"></div>
+    </div>
+    <div>
+        <div id="small"></div>
+    </div>
+</body>
+</html>
