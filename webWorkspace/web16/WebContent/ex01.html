@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        .bxslider{
+
+        }
+        .bxslider img{
+            width: 100%;
+        }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css"> -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        var bx; //외부에서 접근가능할 수 있도록 전역으로 bx 선언
+        $(function(){
+            bx=$('.bxslider').bxSlider({
+                // mode : 'horizontal',
+                // speed: 1000,
+                slideMargin : 0,
+                // startSlide : 5,
+                // randomStart : 'true',   
+                //startSlide와 randomStart는 둘 중 하나만
+                infiniteLoop : true,
+                // hideControlOnEnd : false,
+                //css로 화살표 있을 때 숨김
+                captions : true,
+                //img에 title 속성 붙여서 이미지 끝에 title 보여줌
+                minSlides : 2,
+                maxSlides : 3,
+                slideWidth : 200,
+                moveSlides : 1,
+                // shrinkItems
+                auto: false,
+                pause: 2000,
+                autoHover: true,
+                pager : true,
+                // pagerType : 'short',
+                // pagerShortSeparator : '*',
+                pagerSelector : $('h2'),
+                //임의적으로(jQuery) 엘리먼트 잡으면 지정한 엘리먼트에 pager 넣어줌
+                nextText: '다음',
+                prevText: '이전',
+                nextSelector: $('h2+p>span').eq(1),
+                prevSelector: $('h2+p>span').eq(0),
+                autoControls: true
+                // onSliderLoad: function(){
+                //     console.log('load...');
+                // }
+                // onSliderResize: function(){
+                //     console.log('resize');
+                // },
+                // onSlideNext: function(a,b,c){
+                //     console.log('다음',a.find('img').attr('src'),b,c);
+                // },
+                // onSlidePrev: function(a,b,c){
+                //     console.log('이전',a,b,c);
+                // },
+                // onSlideAfter: function(a,b,c){
+                //     console.log('after',a,b,c);
+                //     $('#target').attr('src',a.find('img').attr('src'));
+                //     //After, Before 위치에 따라 이미지 변하는 시점 달라짐
+                // },
+                // onSlideBefore: function(a,b,c){
+                //     console.log('before',a,b,c);
+                // }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- <img id="target" src="imgs/b1.avif"/> -->
+    <div class="bxslider">
+        <div><img src="imgs/b1.avif" /></div>
+        <div><img src="imgs/b2.avif" /></div>
+        <div><img src="imgs/b3.avif" /></div>
+        <div><img src="imgs/b4.avif" /></div>
+        <div><img src="imgs/b5.avif" /></div>
+        <div><img src="imgs/b6.avif" /></div>
+    </div>
+
+    <h2 id="p"></h2>
+    <p>
+        <span>&lt;</span>
+        <span>&gt;</span>
+    </p>
+</body>
+</html>
