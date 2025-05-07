@@ -1,0 +1,46 @@
+* {
+  width: 800px;
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  margin: 10px;
+}
+body > form {
+  margin-left: 500px;
+}
+body > form > input {
+  display: inline;
+  width: 100px;
+  left: 400px;
+}
+.button {
+  display: inline;
+  width: 80px;
+  margin-left: 10px;
+}
+table {
+  width: 80%;
+  margin: 10px auto 50px auto;
+  border-collapse: collapse;
+}
+table,
+table th,
+table td {
+  border: 1px solid gray;
+  text-align: center;
+}
+table tr > td {
+  height: 45px;
+}
+
+div {
+  display: block;
+}
+div > a {
+  margin-left: 400px;
+  height: 30px;
+  color: blue;
+  text-decoration: none;
+  text-indent: 10px;
+}
