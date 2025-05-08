@@ -1,0 +1,86 @@
+08-May-2025 08:51:04.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.104
+08-May-2025 08:51:04.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 4 2025 12:32:55 UTC
+08-May-2025 08:51:04.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.104.0
+08-May-2025 08:51:04.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+08-May-2025 08:51:04.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.10.14-linuxkit
+08-May-2025 08:51:04.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2025 08:51:04.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-amazon-corretto
+08-May-2025 08:51:04.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_452-b09
+08-May-2025 08:51:04.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+08-May-2025 08:51:04.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /web20/tomcat9
+08-May-2025 08:51:04.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /web20/tomcat9
+08-May-2025 08:51:04.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/web20/tomcat9/conf/logging.properties
+08-May-2025 08:51:04.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2025 08:51:04.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2025 08:51:04.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2025 08:51:04.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+08-May-2025 08:51:04.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-May-2025 08:51:04.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2025 08:51:04.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/web20/tomcat9
+08-May-2025 08:51:04.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/web20/tomcat9
+08-May-2025 08:51:04.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/web20/tomcat9/temp
+08-May-2025 08:51:04.627 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/lib/jvm/java-8-amazon-corretto/lib/amd64/server:/usr/lib/jvm/java-8-amazon-corretto/lib/amd64:/usr/lib/jvm/java-8-amazon-corretto/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+08-May-2025 08:51:04.996 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-May-2025 08:51:05.021 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [854] milliseconds
+08-May-2025 08:51:05.096 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2025 08:51:05.097 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.104]
+08-May-2025 08:51:05.172 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/web20/tomcat9/webapps/web20.war]
+08-May-2025 08:51:10.285 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2025 08:51:10.476 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/web20/tomcat9/webapps/web20.war] has finished in [5,304] ms
+08-May-2025 08:51:10.480 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/web20/tomcat9/webapps/ROOT]
+08-May-2025 08:51:10.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/web20/tomcat9/webapps/ROOT] has finished in [114] ms
+08-May-2025 08:51:10.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/web20/tomcat9/webapps/docs]
+08-May-2025 08:51:10.718 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/web20/tomcat9/webapps/docs] has finished in [122] ms
+08-May-2025 08:51:10.718 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/web20/tomcat9/webapps/examples]
+08-May-2025 08:51:11.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/web20/tomcat9/webapps/examples] has finished in [980] ms
+08-May-2025 08:51:11.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/web20/tomcat9/webapps/host-manager]
+08-May-2025 08:51:11.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/web20/tomcat9/webapps/host-manager] has finished in [131] ms
+08-May-2025 08:51:11.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/web20/tomcat9/webapps/manager]
+08-May-2025 08:51:11.958 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/web20/tomcat9/webapps/manager] has finished in [122] ms
+08-May-2025 08:51:11.975 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-May-2025 08:51:12.001 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6978] milliseconds
+08-May-2025 08:51:27.870 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=9, sub=test8, content=test, id=user10]
+08-May-2025 08:51:27.871 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=8, sub=, content=, id=]
+08-May-2025 08:51:27.872 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=7, sub=, content=, id=]
+08-May-2025 08:51:27.872 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=6, sub=test6, content=test, id=tester]
+08-May-2025 08:51:27.873 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=5, sub=test5, content=test, id=tester]
+08-May-2025 08:51:27.873 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=4, sub=test4, content=test, id=tester]
+08-May-2025 08:51:27.874 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=3, sub=test3, content=test, id=tester]
+08-May-2025 08:51:27.875 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=2, sub=test2, content=test, id=tester]
+08-May-2025 08:51:27.876 INFO [http-nio-8080-exec-4] com.web20.model.BbsDao.selectAll BbsDto [num=1, sub=test1, content=test, id=tester]
+08-May-2025 08:51:31.708 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=9, sub=test8, content=test, id=user10]
+08-May-2025 08:51:31.710 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=8, sub=, content=, id=]
+08-May-2025 08:51:31.711 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=7, sub=, content=, id=]
+08-May-2025 08:51:31.712 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=6, sub=test6, content=test, id=tester]
+08-May-2025 08:51:31.713 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=5, sub=test5, content=test, id=tester]
+08-May-2025 08:51:31.714 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=4, sub=test4, content=test, id=tester]
+08-May-2025 08:51:31.715 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=3, sub=test3, content=test, id=tester]
+08-May-2025 08:51:31.716 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=2, sub=test2, content=test, id=tester]
+08-May-2025 08:51:31.717 INFO [http-nio-8080-exec-7] com.web20.model.BbsDao.selectAll BbsDto [num=1, sub=test1, content=test, id=tester]
+08-May-2025 08:53:20.621 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=9, sub=test8, content=test, id=user10]
+08-May-2025 08:53:20.623 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=8, sub=, content=, id=]
+08-May-2025 08:53:20.624 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=7, sub=, content=, id=]
+08-May-2025 08:53:20.625 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=6, sub=test6, content=test, id=tester]
+08-May-2025 08:53:20.626 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=5, sub=test5, content=test, id=tester]
+08-May-2025 08:53:20.627 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=4, sub=test4, content=test, id=tester]
+08-May-2025 08:53:20.628 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=3, sub=test3, content=test, id=tester]
+08-May-2025 08:53:20.629 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=2, sub=test2, content=test, id=tester]
+08-May-2025 08:53:20.631 INFO [http-nio-8080-exec-3] com.web20.model.BbsDao.selectAll BbsDto [num=1, sub=test1, content=test, id=tester]
+08-May-2025 08:57:18.187 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=9, sub=test8, content=test, id=user10]
+08-May-2025 08:57:18.189 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=8, sub=, content=, id=]
+08-May-2025 08:57:18.189 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=7, sub=, content=, id=]
+08-May-2025 08:57:18.190 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=6, sub=test6, content=test, id=tester]
+08-May-2025 08:57:18.191 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=5, sub=test5, content=test, id=tester]
+08-May-2025 08:57:18.192 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=4, sub=test4, content=test, id=tester]
+08-May-2025 08:57:18.193 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=3, sub=test3, content=test, id=tester]
+08-May-2025 08:57:18.194 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=2, sub=test2, content=test, id=tester]
+08-May-2025 08:57:18.195 INFO [http-nio-8080-exec-8] com.web20.model.BbsDao.selectAll BbsDto [num=1, sub=test1, content=test, id=tester]
+08-May-2025 08:57:20.176 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=9, sub=test8, content=test, id=user10]
+08-May-2025 08:57:20.177 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=8, sub=, content=, id=]
+08-May-2025 08:57:20.178 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=7, sub=, content=, id=]
+08-May-2025 08:57:20.179 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=6, sub=test6, content=test, id=tester]
+08-May-2025 08:57:20.180 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=5, sub=test5, content=test, id=tester]
+08-May-2025 08:57:20.181 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=4, sub=test4, content=test, id=tester]
+08-May-2025 08:57:20.181 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=3, sub=test3, content=test, id=tester]
+08-May-2025 08:57:20.184 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=2, sub=test2, content=test, id=tester]
+08-May-2025 08:57:20.185 INFO [http-nio-8080-exec-10] com.web20.model.BbsDao.selectAll BbsDto [num=1, sub=test1, content=test, id=tester]
