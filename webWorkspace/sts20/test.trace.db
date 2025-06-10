@@ -1,0 +1,6 @@
+2025-06-10 10:58:15.539353+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table dept(deptno int primary key, dname varchar(10), loc varchar(10)[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table dept(deptno int primary key, dname varchar(10), loc varchar(10) [42001-232]
+2025-06-10 10:58:42.056823+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPT" not found; SQL statement:
+drop table dept [42102-232]
