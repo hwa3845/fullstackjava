@@ -1,0 +1,6 @@
+2025-06-13 17:18:41.690231+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM emp INNER JOIN dept [*]using deptno where empno=?"; SQL statement:
+SELECT * FROM emp INNER JOIN dept using deptno where empno=? [42000-232]
+2025-06-13 17:19:09.401406+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM emp m INNER JOIN dept d [*]using deptno where m.empno=?"; SQL statement:
+SELECT * FROM emp m INNER JOIN dept d using deptno where m.empno=? [42000-232]
