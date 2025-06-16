@@ -1,0 +1,17 @@
+console.time('time1');
+var result=console.log('로그');
+console.log(result);
+console.error("에러"); 
+console.warn("주의");
+console.log(__dirname);
+console.log(__filename);
+// console.log(process);
+// console.log(process.env);
+console.log(process.env.mysql_id?process.env.mysql_id:'root');
+console.log(process.env.Oracle_pw);
+
+global.setTimeout(()=>console.log('run'),3000);
+console.time('time2');
+console.timeEnd('time1');
+console.timeEnd('time2');
+console.dir('./');
