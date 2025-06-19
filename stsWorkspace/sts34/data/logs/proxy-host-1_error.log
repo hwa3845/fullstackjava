@@ -1,0 +1,4 @@
+2025/06/19 09:07:25 [error] 205#205: *26 connect() failed (111: Connection refused) while connecting to upstream, client: 10.89.1.1, server: localhost, request: "GET /api HTTP/1.1", upstream: "http://127.0.0.1:8080/api", host: "localhost"
+2025/06/19 09:09:49 [error] 233#233: *54 connect() failed (111: Connection refused) while connecting to upstream, client: 10.89.1.1, server: localhost, request: "GET /api HTTP/1.1", upstream: "http://127.0.0.1:8080/api", host: "localhost"
+2025/06/19 09:09:52 [error] 234#234: *55 connect() failed (111: Connection refused) while connecting to upstream, client: 10.89.1.1, server: localhost, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:8080/api/", host: "localhost"
+2025/06/19 09:11:45 [error] 291#291: *94 connect() failed (111: Connection refused) while connecting to upstream, client: 10.89.1.1, server: localhost, request: "GET /api/ HTTP/1.1", upstream: "http://10.89.1.6:80/api/", host: "localhost"
