@@ -1,23 +1,29 @@
-# 📚 FullStackJava - 학습 & 코드 정리 저장소
+<h1>📚 FullStackJava - 학습 & 코드 정리 저장소</h1>
 
-**AI 응용·MSA 기반 풀스택 Java 개발자 과정 학습기록**
+<p><strong>AI 응용·MSA 기반 풀스택 Java 개발자 과정 학습기록</strong></p>
 
-본 저장소는 **매일 학습한 내용**을 정리하고, **작은 예제 프로그램 코드**를 작성하며 정리하는 용도로 사용됩니다 :contentReference[oaicite:1]{index=1}.
+<p>
+본 저장소는 <strong>매일 학습한 내용</strong>을 정리하고, <strong>작은 예제 프로그램 코드</strong>를 작성하며 정리하는 용도로 사용됩니다.
+</p>
 
----
+<hr>
 
-## 📖 주된 활동
+<h2>📖 주된 활동</h2>
 
-1. **Daily Study Notes**  
-   - 학습한 개념, 주요 링크, 요약 정리
-   - 복습 및 기록용 Markdown 파일
+<ol>
+  <li><strong>Daily Study Notes</strong><br>
+    - 학습한 개념, 주요 링크, 요약 정리<br>
+    - 복습 및 기록용 Markdown 파일
+  </li>
+  <br>
+  <li><strong>Mini Project & Quiz Code</strong><br>
+    - 알고리즘 문제 풀이<br>
+    - Java 기반 예제 코드 작성<br>
+    - 학습 키워드 실습 프로그램 (e.g. 스트림, 람다, 컬렉션, 스레드 등)
+  </li>
+</ol>
 
-2. **Mini Project & Quiz Code**  
-   - 알고리즘 문제 풀이
-   - Java 기반 예제 코드 작성
-   - 학습 키워드 실습 프로그램 (e.g. 스트림, 람다, 컬렉션, 스레드 등)
-
----
+<hr>
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
     <div  align= "center"> 
         <table align="center">
