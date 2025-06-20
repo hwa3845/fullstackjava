@@ -1,15 +1,23 @@
-<div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=a4c0e5&height=120&text=full-stack%20java&animation=&fontColor=515358&fontSize=50" />
-    </div>
-    <div style="text-align: left;"> 
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 소개 </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 
-        <li> full-stack 개발자가 되기 위한 여정 </li>
-        <li> 조금씩 성장 중</li>
-        <li> 1. Organize what you studied each day</li>
-        <li> 2. Write small program code </div> 
-    </div>
-    <div style="text-align: left;">
+# 📚 FullStackJava - 학습 & 코드 정리 저장소
+
+**AI 응용·MSA 기반 풀스택 Java 개발자 과정 학습기록**
+
+본 저장소는 **매일 학습한 내용**을 정리하고, **작은 예제 프로그램 코드**를 작성하며 정리하는 용도로 사용됩니다 :contentReference[oaicite:1]{index=1}.
+
+---
+
+## 📖 주된 활동
+
+1. **Daily Study Notes**  
+   - 학습한 개념, 주요 링크, 요약 정리
+   - 복습 및 기록용 Markdown 파일
+
+2. **Mini Project & Quiz Code**  
+   - 알고리즘 문제 풀이
+   - Java 기반 예제 코드 작성
+   - 학습 키워드 실습 프로그램 (e.g. 스트림, 람다, 컬렉션, 스레드 등)
+
+---
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
     <div  align= "center"> 
         <table align="center">
