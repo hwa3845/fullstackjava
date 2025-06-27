@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.HttpEntity;
@@ -32,28 +31,28 @@ public class ApiController {
     @GetMapping("/")
     public List<?> list() {
         instance=discoveryClient.getInstances("SERVICED").get(0);
-        String url=instance.getUri().toASCIIString()+"/api/v1/dept/";
+        String url=
+        instance.getUri().toASCIIString()+"/api/v1/dept/";
+        System.out.println(url);
         return restTemplate.getForObject(url, List.class);
-
     }
+
 
     @PostMapping("/")
     public String add(@RequestBody DeptVo bean) {
         instance=discoveryClient.getInstances("SERVICED").get(0);
         String url=instance.getUri().toString()+"/api/v1/dept/";
-        System.out.println(bean);
 
-        // MultiValueMap<String, Object> params=new LinkedMultiValueMap<>();
-        // params.add("deptno",0);
+        // MultiValueMap<String,Object> params = new LinkedMultiValueMap<>();
+        // params.add("deptno", bean.getDeptno());
         // params.add("dname", bean.getDname());
         // params.add("loc", bean.getLoc());
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        // headers.set("Content-Type", "application/json");
         HttpEntity<?> req = new HttpEntity<>(bean, headers);
         
-        System.out.println(req);
-
         return restTemplate.postForObject(url, req, String.class);
     }
     
