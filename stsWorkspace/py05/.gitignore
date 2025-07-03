@@ -1,0 +1,8 @@
+**/.venv
+**/.env
+**/.idea
+**/myapi.db
+**/*.pyc
+**/__pycache__
+**/migrations
+**/alembic.ini
